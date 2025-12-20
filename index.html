@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saylani Welfare International Trust</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- AOS Animations -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1>Saylani Welfare</h1>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#donate">Donate</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button id="darkModeToggle" title="Toggle Dark/Light Mode">🌙</button>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <video autoplay muted loop class="hero-video">
+    <source src="assets/hero-video.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h2>Empowering Lives Through Technology & Welfare</h2>
+    <p>Transforming millions of lives with education, food, healthcare, and IT training.</p>
+    <button>Explore Programs</button>
+  </div>
+</div>
+
+<!-- PROGRAMS -->
+<section id="programs">
+  <h2 data-aos="fade-down">Our Core Programs</h2>
+  <div class="cards">
+    <div class="card" data-aos="fade-up" data-aos-delay="100">
+      <h3>Free IT Education</h3>
+      <p>Courses in Web Development, AI, Mobile Apps, and Cloud Computing.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="200">
+      <h3>Food Distribution</h3>
+      <p>Providing thousands of meals daily across Pakistan.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="300">
+      <h3>Healthcare Services</h3>
+      <p>Free medical checkups and health awareness programs.</p>
+    </div>
+    <div class="card" data-aos="fade-up" data-aos-delay="400">
+      <h3>Disaster Relief</h3>
+      <p>Emergency support during floods, earthquakes, and crises.</p>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats">
+  <div data-aos="zoom-in" data-aos-delay="100"><h3 class="counter" data-target="1000000">0</h3><p>Students Trained</p></div>
+  <div data-aos="zoom-in" data-aos-delay="200"><h3 class="counter" data-target="50000">0</h3><p>Daily Meals</p></div>
+  <div data-aos="zoom-in" data-aos-delay="300"><h3 class="counter" data-target="500">0</h3><p>IT Campuses</p></div>
+  <div data-aos="zoom-in" data-aos-delay="400"><h3 class="counter" data-target="25">0</h3><p>Countries Served</p></div>
+</div>
+
+<!-- CTA -->
+<div class="cta" id="donate" data-aos="fade-up">
+  <h2>Support Humanity – Donate Today</h2>
+  <p>Your small contribution can change a life forever.</p>
+  <button>Donate Now</button>
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <h3>Saylani Welfare International Trust</h3>
+  <p>Serving humanity with compassion, technology, and transparency.</p>
+  <p>© 2025 Saylani Welfare. All Rights Reserved.</p>
+</footer>
+
+<!-- Floating Donate Button -->
+<a href="#donate" class="floating-donate">Donate</a>
+
+<!-- DIALOGFLOW CHATBOT -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="Saylani-AI-Welfare-Pro"
+  agent-id="6ac10d05-99e0-42e8-a75c-e807b1f08e50"
+  language-code="en">
+</df-messenger>
+
+<!-- AOS Animations -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
+
