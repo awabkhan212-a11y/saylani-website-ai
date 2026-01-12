@@ -1,67 +1,65 @@
-:root {
-    --bg-color: #f7f9fc;
-    --text-color: #333;
-    --nav-bg: #fff;
-    --card-bg: #fff;
-    --cta-bg: linear-gradient(135deg,#0a8f3c,#05c46b);
-    --cta-btn-bg: #fff;
-    --cta-btn-color: #0a8f3c;
+:root{
+  --bg-color:#f7f9fc;
+  --text-color:#333;
+  --primary:#0a8f3c;
+  --card-bg:#fff;
+  --cta-bg:linear-gradient(135deg,#0a8f3c,#05c46b);
+  --cta-btn-bg:#fff;
+  --cta-btn-color:#0a8f3c;
 }
 
 body{
-    background: var(--bg-color);
-    color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    transition: all 0.5s ease;
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:var(--bg-color);
+  color:var(--text-color);
+  transition:0.5s;
 }
 
-body.dark-mode{
-    --bg-color: #111;
-    --text-color: #ddd;
-    --nav-bg: #222;
-    --card-bg: #1e1e1e;
-    --cta-bg: linear-gradient(135deg,#333,#555);
-    --cta-btn-bg: #0a8f3c;
-    --cta-btn-color: #fff;
-}
+.hero{position:relative;height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden;}
+.hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:1;}
+.hero-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:2;}
+.hero-content{position:relative;z-index:3;}
+.hero h1{font-size:50px;}
+.green-text{color:var(--primary);}
+.hero p{font-size:20px;margin:20px 0;}
+.hero-btns button{padding:15px 35px;margin:10px;border-radius:25px;cursor:pointer;font-weight:600;}
+.btn-fill{background:var(--primary);color:#fff;border:none;}
+.btn-outline{background:none;color:#fff;border:2px solid #fff;}
 
 /* Navbar */
-.navbar {display:flex; justify-content:space-between; align-items:center; padding:15px 60px; background: var(--nav-bg); position:sticky; top:0; z-index:1000; box-shadow:0 5px 20px rgba(0,0,0,0.08);}
-.nav-links {list-style:none; display:flex; gap:25px; margin:0;}
-.nav-links li a {text-decoration:none; color: var(--text-color); font-weight:500; transition:0.3s;}
-.nav-links li a.active, .nav-links li a:hover {color:#0a8f3c;}
-.logo img {height:50px;}
+.navbar{display:flex;justify-content:space-between;align-items:center;padding:15px 60px;background:#fff;position:sticky;top:0;z-index:1000;box-shadow:0 5px 20px rgba(0,0,0,0.08);}
+.nav-links{list-style:none;display:flex;gap:25px;}
+.nav-links li a{text-decoration:none;color:#333;font-weight:500;}
+.nav-links li a.active, .nav-links li a:hover{color:var(--primary);}
+.logo img{height:50px;}
 
-/* Hero Section */
-.hero {position:relative; height:100vh; display:flex; align-items:center; justify-content:center; color:#fff; overflow:hidden;}
-.hero-video {position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:1;}
-.hero-overlay {position:absolute; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.5); z-index:2;}
-.hero-content {position:relative; z-index:3; text-align:center;}
-.hero h1 {font-size:50px;}
-.green-text {color:#0a8f3c;}
-.hero-btns button {padding:15px 30px; margin:10px; border:none; cursor:pointer; border-radius:25px;}
-.btn-fill {background:#0a8f3c; color:#fff;}
-.btn-outline {background:none; border:2px solid #fff; color:#fff;}
+/* Services */
+.services{padding:80px 60px;text-align:center;}
+.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;}
+.service-card{background:var(--card-bg);padding:30px;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,0.08);transition:0.3s;}
+.service-card:hover{transform:translateY(-10px);}
+.service-card h3{color:var(--primary);}
+.icon{font-size:40px;margin-bottom:15px;color:var(--primary);}
 
-/* Services Section */
-.services {padding:80px 60px;}
-.service-grid {display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:30px;}
-.service-card {background: var(--card-bg); padding:30px; border-radius:15px; text-align:center; box-shadow:0 10px 30px rgba(0,0,0,0.08);}
-.service-card h3 {color:#0a8f3c;}
-.icon-box {font-size:40px; margin-bottom:20px; color:#0a8f3c;}
+/* Impact Counters */
+.impact{background:var(--primary);color:#fff;padding:80px 60px;text-align:center;}
+.counter-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;}
+.counter{font-size:40px;font-weight:700;}
 
-/* Dialogflow Floating */
-df-messenger {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 10000;
-}
+/* CTA */
+.cta{background:var(--cta-bg);color:#fff;text-align:center;padding:80px 40px;}
+.cta button{padding:15px 40px;border-radius:25px;border:none;background:var(--cta-btn-bg);color:var(--cta-btn-color);font-weight:600;cursor:pointer;}
+
+/* Floating Donate */
+.floating-donate{position:fixed;bottom:30px;right:30px;background:var(--primary);color:#fff;padding:15px 25px;border-radius:50px;font-weight:bold;text-decoration:none;box-shadow:0 5px 15px rgba(0,0,0,0.3);transition:0.3s;}
+.floating-donate:hover{background:#087733;}
 
 /* Responsive */
 @media(max-width:768px){
-  .navbar {padding:15px 30px;}
-  .hero h1 {font-size:32px;}
-  .services {padding:50px 20px;}
+  .navbar{padding:10px 20px;}
+  .hero h1{font-size:32px;}
+  .hero p{font-size:16px;}
+  .services{padding:50px 20px;}
+  .impact{padding:50px 20px;}
 }

@@ -1,21 +1,22 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Saylani Welfare – Serving Humanity</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Saylani Welfare – Serving Humanity</title>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-  <!-- AOS Animations -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+<!-- AOS Animations -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -38,30 +39,28 @@
 <header class="navbar">
   <div class="container nav-flex">
     <div class="logo">
-      <img src="./assets/logo.png" alt="Saylani Welfare Logo">
+      <img src="./assets/logo.png" alt="Saylani Logo">
     </div>
     <nav>
       <ul class="nav-links">
         <li><a href="#" class="active">Home</a></li>
-        <li><a href="#services">About Us</a></li>
-        <li><a href="#services">Livelihood</a></li>
-        <li><a href="#services">Education</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#impact">Impact</a></li>
         <li><a href="#donate" class="btn-donate">Donate Now</a></li>
       </ul>
     </nav>
   </div>
 </header>
 
-<!-- Hero Section -->
+<!-- Hero -->
 <section class="hero">
   <video autoplay muted loop class="hero-video">
     <source src="./assets/hero-video.mp4" type="video/mp4">
   </video>
   <div class="hero-overlay"></div>
   <div class="hero-content" data-aos="fade-up">
-    <h2 class="badge">Welcome to Saylani Welfare</h2>
-    <h1>Serving Humanity <br><span class="green-text">Without Discrimination</span></h1>
-    <p>Providing food, education, and healthcare to millions daily through our welfare programs.</p>
+    <h1>Serving Humanity <span class="green-text">Without Discrimination</span></h1>
+    <p>Providing food, education, and healthcare to millions daily through our dedicated welfare programs.</p>
     <div class="hero-btns">
       <button class="btn-fill">Contribute Now</button>
       <button class="btn-outline">Our Projects</button>
@@ -69,34 +68,63 @@
   </div>
 </section>
 
-<!-- Services Section -->
+<!-- Services -->
 <section id="services" class="services">
   <div class="container">
-    <div class="section-title">
-      <span>Our Impact</span>
-      <h2>What We Are Doing</h2>
-      <div class="title-line"></div>
-    </div>
-
+    <h2 data-aos="fade-down">Our Programs</h2>
     <div class="service-grid">
       <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="icon-box"><i class="fas fa-utensils"></i></div>
+        <i class="fas fa-utensils icon"></i>
         <h3>Dastarkhwan</h3>
         <p>Feeding over 150,000 people daily across Pakistan.</p>
       </div>
       <div class="service-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
-        <h3>SMIT (IT Training)</h3>
+        <i class="fas fa-laptop-code icon"></i>
+        <h3>SMIT IT Training</h3>
         <p>Empowering youth with professional IT skills and courses.</p>
       </div>
       <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="icon-box"><i class="fas fa-ambulance"></i></div>
+        <i class="fas fa-ambulance icon"></i>
         <h3>Medical Services</h3>
-        <p>Providing free clinics and emergency ambulance services.</p>
+        <p>Free clinics and emergency ambulance services for the needy.</p>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Impact Counters -->
+<section id="impact" class="impact">
+  <div class="container">
+    <div class="counter-grid">
+      <div data-aos="zoom-in" data-aos-delay="100">
+        <h3 class="counter" data-target="150000">0</h3>
+        <p>People Fed Daily</p>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="200">
+        <h3 class="counter" data-target="1000000">0</h3>
+        <p>Students Trained</p>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="300">
+        <h3 class="counter" data-target="500">0</h3>
+        <p>IT Campuses</p>
+      </div>
+      <div data-aos="zoom-in" data-aos-delay="400">
+        <h3 class="counter" data-target="25">0</h3>
+        <p>Countries Served</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Donate CTA -->
+<section class="cta" id="donate">
+  <h2>Support Humanity – Donate Today</h2>
+  <p>Your small contribution can change a life forever.</p>
+  <button>Donate Now</button>
+</section>
+
+<!-- Floating Donate Button -->
+<a href="#donate" class="floating-donate">Donate</a>
 
 <!-- Dialogflow Chatbot -->
 <df-messenger
