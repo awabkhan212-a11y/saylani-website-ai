@@ -4,12 +4,22 @@
   <meta charset="UTF-8">
   <title>Saylani Welfare – Serving Humanity</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- AOS Animations -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- Top Bar -->
 <div class="top-bar">
   <div class="container">
     <div class="contact-info">
@@ -24,10 +34,11 @@
   </div>
 </div>
 
+<!-- Navbar -->
 <header class="navbar">
   <div class="container nav-flex">
     <div class="logo">
-      <img src="assets/logo.png" alt="Saylani Welfare Logo">
+      <img src="./assets/logo.png" alt="Saylani Welfare Logo">
     </div>
     <nav>
       <ul class="nav-links">
@@ -41,20 +52,24 @@
   </div>
 </header>
 
+<!-- Hero Section -->
 <section class="hero">
-  <div class="hero-overlay">
-    <div class="hero-content">
-      <h2 class="badge">Welcome to Saylani Welfare</h2>
-      <h1>Serving Humanity <br><span class="green-text">Without Discrimination</span></h1>
-      <p>Providing food, education, and healthcare to millions of people daily through our dedicated welfare programs.</p>
-      <div class="hero-btns">
-        <button class="btn-fill">Contribute Now</button>
-        <button class="btn-outline">Our Projects</button>
-      </div>
+  <video autoplay muted loop class="hero-video">
+    <source src="./assets/hero-video.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="hero-content" data-aos="fade-up">
+    <h2 class="badge">Welcome to Saylani Welfare</h2>
+    <h1>Serving Humanity <br><span class="green-text">Without Discrimination</span></h1>
+    <p>Providing food, education, and healthcare to millions daily through our welfare programs.</p>
+    <div class="hero-btns">
+      <button class="btn-fill">Contribute Now</button>
+      <button class="btn-outline">Our Projects</button>
     </div>
   </div>
 </section>
 
+<!-- Services Section -->
 <section id="services" class="services">
   <div class="container">
     <div class="section-title">
@@ -64,17 +79,17 @@
     </div>
 
     <div class="service-grid">
-      <div class="service-card">
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
         <div class="icon-box"><i class="fas fa-utensils"></i></div>
         <h3>Dastarkhwan</h3>
-        <p>Feeding over 150,000 people daily across the country.</p>
+        <p>Feeding over 150,000 people daily across Pakistan.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
         <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
         <h3>SMIT (IT Training)</h3>
         <p>Empowering youth with professional IT skills and courses.</p>
       </div>
-      <div class="service-card">
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
         <div class="icon-box"><i class="fas fa-ambulance"></i></div>
         <h3>Medical Services</h3>
         <p>Providing free clinics and emergency ambulance services.</p>
@@ -83,9 +98,7 @@
   </div>
 </section>
 
-<!-- ✅ Dialogflow Messenger -->
-<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-
+<!-- Dialogflow Chatbot -->
 <df-messenger
   intent="WELCOME"
   chat-title="saylani.welfare.ai"
@@ -93,5 +106,9 @@
   language-code="en">
 </df-messenger>
 
+<!-- Scripts -->
+<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
